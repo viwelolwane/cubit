@@ -29,7 +29,7 @@ ADD tomcat_run.sh /tomcat_run.sh
 
 
 #------------- Geoserver ----------------------------------------------------
-ENV GEOSERVER_VERSION 2.8.2
+ENV GEOSERVER_VERSION 2.9-beta
 RUN if [ ! -f /tmp/resources/geoserver.war.zip ]; then \
       wget -c http://sourceforge.net/projects/geoserver/files/GeoServer/${GEOSERVER_VERSION}/geoserver-${GEOSERVER_VERSION}-war.zip -O /tmp/resources/geoserver.war.zip; \
    fi; \
